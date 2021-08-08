@@ -4,6 +4,7 @@
 #include "./number/convert.h"
 #include "./number/num_menu.h"
 #include "./temperature/temp_menu.h"
+#include "./mass/mass_menu.h"
 
 using namespace std;
 
@@ -49,7 +50,28 @@ void tempMenu(){
 
         tempMenu(Userchoice);
     }
+}
 
+void MassMenu(){
+    char Userchoice;
+    while(tolower(Userchoice) != 'q'){
+        cout << "\n================================================================" << endl;
+        cout << "\nWhich one you do want to choose?" << endl;
+        cout << "(A) Kilograms to other units" << endl;
+        cout << "(B) Grams to other unit\n" << endl;
+
+        cout << "(C) Pounds to other units" << endl;
+        cout << "(D) Ounces to other units\n" << endl;
+
+        cout << "(E) Stones to other units" << endl;
+        cout << "(F) Tons to other units" << endl;
+
+        cout << "\n(q) to quit" << endl;
+
+        cin >> Userchoice;
+
+        massMenu(Userchoice);
+    }
 }
 
 #endif
