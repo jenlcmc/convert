@@ -13,6 +13,7 @@ int main(){
         cout << "(2) Conversion between Fahrenheit and Celsius" << endl;
         cout << "(3) Mass Conversion" << endl;
         cout << "(4) Height and Metric Conversion" << endl;
+        cout << "(5) Roman numerical conversion" << endl;
         cout << "(0) Quit" << endl;
 
         cin >> choice;
@@ -31,6 +32,11 @@ int main(){
                 break;
 
             case 4:
+                HeightMetric();
+                break;
+
+            case 5:
+                roman();
                 break;
 
             case 0:

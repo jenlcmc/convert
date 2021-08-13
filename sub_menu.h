@@ -1,10 +1,11 @@
 #ifndef SUB_MENU_H
 #define SUB_MENU_H
 
-#include "./number/convert.h"
 #include "./number/num_menu.h"
 #include "./temperature/temp_menu.h"
 #include "./mass/mass_menu.h"
+#include "./height_metric/h_m_menu.h"
+#include "./roman/roman_menu.h"
 
 using namespace std;
 
@@ -71,6 +72,47 @@ void MassMenu(){
         cin >> Userchoice;
 
         massMenu(Userchoice);
+    }
+}
+
+void HeightMetric(){
+    char Userchoice;
+    while(tolower(Userchoice) != 'q'){
+        cout << "\n================================================================" << endl;
+        cout << "\nWhich one you do want to choose?" << endl;
+        cout << "(A) Ft and Inches to Cm" << endl;
+        cout << "(B) Cm to Ft and Inches\n" << endl;
+
+        cout << "(C) Meter to other units" << endl;
+        cout << "(D) Kilometer to other units\n" << endl;
+
+        cout << "(E) Centimeter to other units" << endl;
+        cout << "(F) Ft to other units" << endl;
+        cout << "(G) Inches to other units" << endl;
+        cout << "(H) Miles to other units" << endl;
+        cout << "(I) Yards to other units" << endl;
+
+        cout << "\n(q) to quit" << endl;
+
+        cin >> Userchoice;
+
+        MetricMenu(Userchoice);
+    }
+}
+
+void roman(){
+    char Userchoice;
+    while(tolower(Userchoice) != 'q'){
+        cout << "\n================================================================" << endl;
+        cout << "\nWhich one you do want to choose?" << endl;
+        cout << "(A) Roman to numerial" << endl;
+        cout << "(B) Numerial to Roman\n" << endl;
+
+        cout << "\n(q) to quit" << endl;
+
+        cin >> Userchoice;
+
+        RomanMenu(Userchoice);
     }
 }
 
